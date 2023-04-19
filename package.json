@@ -1,0 +1,21 @@
+{
+  "name": "clara",
+  "author": "Emanuele Amanda Marques <emanuele4dev@gmail.com>",
+  "license": "MIT",
+  "description": "Automation Challenge by Clara",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.10.0",
+    "esbuild": "^0.17.12"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/steps/**/*.{js,ts}"
+  }
+}
